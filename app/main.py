@@ -80,7 +80,8 @@ def create_task(task: TaskCreate):
 
 @app.get("/about",response_class=PlainTextResponses)
 def about_backend():
-    return "This is all backend"
+    return "This is the backend service built using FastAPI."
+
 
 @app.get("/tasks")
 def list_tasks(limit: int = 100):
